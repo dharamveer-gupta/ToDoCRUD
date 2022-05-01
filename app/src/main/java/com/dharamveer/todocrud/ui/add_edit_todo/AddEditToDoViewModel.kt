@@ -65,7 +65,7 @@ class AddEditToDoViewModel @Inject constructor(
                 viewModelScope.launch {
                     if (title.isBlank()) {
                         sendUiEvent(UiEvent.ShowSnackBar(
-                            message = "Title cannot be empty"
+                            message = "Title can't be empty"
                         ))
                         return@launch
                     }
