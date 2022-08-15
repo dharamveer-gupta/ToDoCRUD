@@ -7,8 +7,10 @@ import androidx.compose.material.icons.filled.Check
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.dharamveer.todocrud.R
 import com.dharamveer.todocrud.util.UiEvent
 import kotlinx.coroutines.flow.collect
 
@@ -60,7 +62,7 @@ fun AddEditToDoScreen(
                     viewModel.onEvent(AddEditToDoEvent.OnTitleChange(it))
                 },
                 placeholder = {
-                    Text(text = "Title")
+                    Text(text = stringResource(R.string.str_title))
                 },
                 modifier = Modifier.fillMaxWidth()
             )
