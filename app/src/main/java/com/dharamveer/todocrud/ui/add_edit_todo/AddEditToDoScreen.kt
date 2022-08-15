@@ -73,7 +73,7 @@ fun AddEditToDoScreen(
                     viewModel.onEvent(AddEditToDoEvent.OnTitleChange(it))
                 },
                 placeholder = {
-                    Text(text = "Description")
+                    Text(text = stringResource(R.string.str_description))
                 },
                 modifier = Modifier.fillMaxWidth(),
                 singleLine = false,
