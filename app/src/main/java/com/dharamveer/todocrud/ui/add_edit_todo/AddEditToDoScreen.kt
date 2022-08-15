@@ -51,7 +51,7 @@ fun AddEditToDoScreen(
             FloatingActionButton(onClick = {
                 viewModel.onEvent(AddEditToDoEvent.OnSaveToDoClick)
             }) {
-                Icon(imageVector = Icons.Default.Check, contentDescription = "Save")
+                Icon(imageVector = Icons.Default.Check, contentDescription = stringResource(R.string.str_save))
             }
         }
     ) {
